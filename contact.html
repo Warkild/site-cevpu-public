@@ -1,98 +1,157 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – CEVPU</title>
+  <meta name="description" content="Contactez la CEVPU par e-mail ou via les réseaux sociaux.">
 
-    <!-- OpenGraph-->
-    <title>Conférence nationale des étudiants vice-présidents d'université</title>
-    <meta name="description"
-        content="La CEVPU est une structure de mutualisation et d’expertise au service de tous les acteurs de l’enseignement supérieur. Elle rassemble les étudiants vice-présidents d'université françaises.">
-    <meta property="og:url" content="https://cevpu.org" />
-    <meta property="og:title" content="CEVPU - Conférence nationale des étudiants vice-présidents d'université">
-    <meta property="og:description"
-        content="La CEVPU est une structure de mutualisation et d’expertise au service de tous les acteurs de l’enseignement supérieur. Elle rassemble les étudiants vice-présidents d'université françaises.">
-    <meta property="og:image" content="https://cevpu.org/images/CEVPU_Communication_Logo_Court.webp">
+  <!-- OpenGraph -->
+  <meta property="og:url"         content="https://cevpu.org/contact.html" />
+  <meta property="og:title"       content="Contact – CEVPU">
+  <meta property="og:description" content="Contactez la CEVPU par e-mail ou via les réseaux sociaux.">
+  <meta property="og:image"       content="https://cevpu.org/images/CEVPU_Communication_Logo_Court.webp">
 
-    <!-- ld+json -->
-    <script type="application/ld+json" src="json/cevpu.json"></script>
+  <!-- ld+json -->
+  <script type="application/ld+json" src="json/cevpu.json"></script>
 
-    <!-- style -->
-    <link rel="stylesheet" href="./css/style.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./images/favicon.webp">
 
-    <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="./images/favicon.webp">
-    <title>CEVPU - Conférence nationale des étudiants vice-présidents d'univesrité</title>
-    <!-- import -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./css/index.css">
 </head>
-<body class="container" lang="fr">
-    <header>
-        <div class="logo">
-            <a href="index.html"><img src="./images/CEVPU_Communication_Logo_Court.webp" alt="Logo de la CEVPU"></a>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo" aria-label="CEVPU – accueil">
+        <img src="./images/CEVPU_Communication_Logo_Court.webp" alt="Logo CEVPU">
+      </a>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <ul class="nav-list" id="nav-list">
+          <li><a href="index.html"           class="nav-link">Présentation</a></li>
+          <li><a href="fonctionnement.html"  class="nav-link">Fonctionnement</a></li>
+          <li><a href="histoire.html"        class="nav-link">Histoire</a></li>
+          <li><a href="travaux.html"         class="nav-link">Travaux</a></li>
+          <li><a href="contact.html"         class="nav-link nav-link--cta current">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle"
+              aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-list">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- BANNIÈRE -->
+  <div class="page-banner">
+    <div class="page-container">
+      <p class="page-banner-label">CEVPU</p>
+      <h1 class="page-banner-title">Contact</h1>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- Contact principal -->
+    <section class="section">
+      <div class="page-container">
+        <div class="contact-wrapper">
+          <p class="contact-intro">
+            Vous souhaitez en savoir plus sur la CEVPU, nous poser une question
+            ou prendre contact avec le bureau ?
+          </p>
+          <a href="mailto:contact@cevpu.org?subject=Contact" class="contact-email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            contact@cevpu.org
+          </a>
+
+          <p class="contact-or">Ou retrouvez-nous sur les réseaux sociaux</p>
+
+          <div class="social-list" style="justify-content:center;">
+            <a href="https://www.instagram.com/cevpu_/" class="social-item"
+               target="_blank" rel="noopener noreferrer">
+              <div class="social-icon" style="background:rgba(17,170,204,0.1);border-color:var(--c-border);">
+                <img src="./images/instagram-ico.webp" alt="" aria-hidden="true" loading="lazy"
+                     style="filter:none;">
+              </div>
+              <span style="color:var(--c-text-muted);">Instagram</span>
+            </a>
+            <a href="https://www.linkedin.com/company/cevpu/" class="social-item"
+               target="_blank" rel="noopener noreferrer">
+              <div class="social-icon" style="background:rgba(17,170,204,0.1);border-color:var(--c-border);">
+                <img src="./images/linkedin-ico.webp" alt="" aria-hidden="true" loading="lazy">
+              </div>
+              <span style="color:var(--c-text-muted);">LinkedIn</span>
+            </a>
+            <a href="https://twitter.com/CEVPU" class="social-item"
+               target="_blank" rel="noopener noreferrer">
+              <div class="social-icon" style="background:rgba(17,170,204,0.1);border-color:var(--c-border);">
+                <img src="./images/twitter-ico.webp" alt="" aria-hidden="true" loading="lazy">
+              </div>
+              <span style="color:var(--c-text-muted);">Twitter / X</span>
+            </a>
+          </div>
         </div>
-        <nav class="navbar">
-            <input type="checkbox" class="toggle-menu" id="toogle-menu">
-            <label for="toogle-menu"><div class="hamburger"></div></label>
-            <ul class="navbar-nav">
-                <br>
-                <li class="nav-item"><a class="nav-link" href="index.html">Présentation</a></li>
-                <li class="nav-item"><a class="nav-link" href="fonctionnement.html">Fonctionnement</a></li>
-                <li class="nav-item"><a class="nav-link" href="histoire.html">Histoire</a></li>
-                <li class="nav-item"><a class="nav-link" href="travaux.html">Travaux</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+      </div>
+    </section>
 
-    <div>
-        <br>
-        <p></p>
-        <br>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="page-container footer-inner">
+      <div class="footer-logo">
+        <img src="./images/CEVPU_Communication_Logo_Long_FondTransparent.webp" alt="CEVPU" loading="lazy">
+      </div>
+      <p class="footer-copy">© 2025 CEVPU – Conférence nationale des étudiants vice-présidents d'université</p>
+      <nav class="footer-nav" aria-label="Liens de pied de page">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
+  </footer>
 
-    <div class="corpus">
-        <!-- Section 1 -->
-        <div class="section1">
-            <h1>Vous souhaitez en savoir plus ?</h1>
-            <p>Contactez-nous directement par mail <a href="mailto:contact@cevpu.org?subject=Contact">contact@cevpu.org</a> </p>
-            <br>
-            <p>Ou via nos réseaux sociaux :</p>
-            <div class="icon-small center grid-reseaux">
-                <a href="https://www.instagram.com/cevpu_/"><img class="icon" src="./images/instagram-ico.webp" alt="Logo instagram"></a>
-                <a href="https://www.linkedin.com/company/cevpu/"><img class="icon" src="./images/linkedin-ico.webp" alt="Logo Linkedin"></a>
-                <a href="https://twitter.com/CEVPU"><img class="icon" src="./images/twitter-ico.webp" alt="Logo X (anciennement twitter)"></a>
-            </div>
-            <br>
-            <br>
-            <br>
-        </div>
-    </div>
+  <script>
+    (function () {
+      const toggle = document.getElementById('nav-toggle');
+      const list   = document.getElementById('nav-list');
+      if (!toggle || !list) return;
+      toggle.addEventListener('click', function () {
+        const open = list.classList.toggle('is-open');
+        toggle.classList.toggle('is-open', open);
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
+      });
+      document.addEventListener('click', function (e) {
+        if (!toggle.contains(e.target) && !list.contains(e.target)) {
+          list.classList.remove('is-open');
+          toggle.classList.remove('is-open');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && list.classList.contains('is-open')) {
+          list.classList.remove('is-open');
+          toggle.classList.remove('is-open');
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.focus();
+        }
+      });
+    })();
+  </script>
 
-    <span>
-        <br>
-        <br>
-    </span>
-
-    <div>
-        <br>
-        <p></p>
-        <br>
-    </div>
-
-    <div>
-        <br>
-        <p></p>
-        <br>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        <div class="grid-footer center">
-            <p><a href="mentions-legales.html">Mentions légales</a></p>
-            <p><a href="contact.html">Contact</a></p>
-        </div>
-    </footer>
 </body>
 </html>
